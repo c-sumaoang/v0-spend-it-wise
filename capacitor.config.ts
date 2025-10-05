@@ -5,6 +5,13 @@ const config: CapacitorConfig = {
   appName: "SpendWise",
   webDir: "out",
   bundledWebRuntime: false,
+  android: {
+    buildOptions: {
+      keystorePath: undefined,
+      keystoreAlias: undefined,
+      releaseType: "APK",
+    },
+  },
   server: {
     androidScheme: "https",
     iosScheme: "https",
